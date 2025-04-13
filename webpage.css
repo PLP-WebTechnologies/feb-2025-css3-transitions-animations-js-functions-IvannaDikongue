@@ -1,0 +1,36 @@
+/* Simple animation */
+@keyframes changeBackground {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+/* Apply the animation when triggered */
+.animated {
+  animation: changeBackground 2s infinite;
+}
+
+/* Styling for the button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Image styling */
+#imageElement {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  transition: transform 0.5s;
+}
+
+#imageContainer:hover #imageElement {
+  transform: scale(1.2);
+}
